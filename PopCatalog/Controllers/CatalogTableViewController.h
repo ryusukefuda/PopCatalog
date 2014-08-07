@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  CatalogTableViewController.h
 //  PopCatalog
 //
 //  Created by Fuda Ryusuke on 2014/08/04.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@interface CatalogTableViewController : UIViewController
 
 @end
