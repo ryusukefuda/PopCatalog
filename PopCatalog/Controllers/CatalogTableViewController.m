@@ -43,7 +43,9 @@
                                @"Slide",
                                @"Bound",
                                @"Rotation (POP-MCAnimate)",
-                               
+                               @"Count Down",
+                               @"Slot",
+                               @"Manga"
                                ];
 }
 
@@ -91,6 +93,9 @@
             break;
         case 4:
             [self performSegueWithIdentifier:@"toRotation" sender:self];
+            break;
+        case 5:
+            [self performSegueWithIdentifier:@"toCountDown" sender:self];
             break;
     
         default:

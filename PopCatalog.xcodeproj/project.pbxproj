@@ -26,6 +26,7 @@
 		433465DB1993538100660FB2 /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433465DA1993538100660FB2 /* RotationViewController.m */; };
 		438415301990DBCA0041C518 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4384152F1990DBCA0041C518 /* SlideViewController.m */; };
 		43841533199111A00041C518 /* BoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43841532199111A00041C518 /* BoundViewController.m */; };
+		43983DF81994C5B6006410AC /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43983DF71994C5B6006410AC /* CountDownViewController.m */; };
 		88E0593357D04192A0793A6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0AF24A4DE349D392465EBB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		4384152F1990DBCA0041C518 /* SlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
 		43841531199111A00041C518 /* BoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundViewController.h; sourceTree = "<group>"; };
 		43841532199111A00041C518 /* BoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoundViewController.m; sourceTree = "<group>"; };
+		43983DF61994C5B6006410AC /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
+		43983DF71994C5B6006410AC /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
 		661DC08E466F473C8A2638D6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CD0AF24A4DE349D392465EBB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,6 +190,8 @@
 				43841532199111A00041C518 /* BoundViewController.m */,
 				433465D91993538100660FB2 /* RotationViewController.h */,
 				433465DA1993538100660FB2 /* RotationViewController.m */,
+				43983DF61994C5B6006410AC /* CountDownViewController.h */,
+				43983DF71994C5B6006410AC /* CountDownViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 			files = (
 				43182E55198F1C5600B479E8 /* AppDelegate.m in Sources */,
 				43182E51198F1C5600B479E8 /* main.m in Sources */,
+				43983DF81994C5B6006410AC /* CountDownViewController.m in Sources */,
 				433465DB1993538100660FB2 /* RotationViewController.m in Sources */,
 				438415301990DBCA0041C518 /* SlideViewController.m in Sources */,
 				43841533199111A00041C518 /* BoundViewController.m in Sources */,

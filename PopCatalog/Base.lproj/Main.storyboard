@@ -61,6 +61,7 @@
                         <segue destination="g5R-L9-rJe" kind="push" identifier="toSlide" id="sUj-nl-9kN"/>
                         <segue destination="fK6-O5-Ebd" kind="push" identifier="toBound" id="Cwo-Xt-kP1"/>
                         <segue destination="Kgg-Vc-NCb" kind="push" identifier="toRotation" id="KKc-kg-zbV"/>
+                        <segue destination="ddL-Iy-P4f" kind="push" identifier="toCountDown" id="UMn-83-eOV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKs-iV-Loo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -103,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ypv-PQ-nqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="-50"/>
+            <point key="canvasLocation" x="872" y="-718"/>
         </scene>
         <!--Slide View Controller-->
         <scene sceneID="KLR-Ba-eRE">
@@ -181,7 +182,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msZ-19-XpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="626"/>
+            <point key="canvasLocation" x="1358" y="-274"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HE1-GS-h0e">
+            <objects>
+                <viewController id="Vca-E7-2CS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3hh-Fx-Bok"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Tn-w5-2he"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHH-jL-sTI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37f-DZ-5xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="1269"/>
+        </scene>
+        <!--Count Down View Controller-->
+        <scene sceneID="dcH-3e-ZVC">
+            <objects>
+                <viewController id="ddL-Iy-P4f" customClass="CountDownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dHM-sE-P1c"/>
+                        <viewControllerLayoutGuide type="bottom" id="voD-5r-LqZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Xi-rn-S9a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRJ-OE-heG">
+                                <rect key="frame" x="70" y="219" width="180" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oyZ-F9-Nyh"/>
+                    <connections>
+                        <outlet property="myLabel" destination="mRJ-OE-heG" id="8da-6a-QDc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Izh-VP-Ga0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="1289"/>
         </scene>
         <!--Rotation View Controller-->
         <scene sceneID="rm5-PU-Qlf">
@@ -218,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bcc-ec-K9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="865"/>
+            <point key="canvasLocation" x="1358" y="1141"/>
         </scene>
         <!--Bound View Controller-->
         <scene sceneID="mNw-yP-dXa">
@@ -257,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Eg-Tl-vno" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168" y="1328"/>
+            <point key="canvasLocation" x="1396" y="456"/>
         </scene>
         <!--Fadein Fadeout View Controller-->
         <scene sceneID="Grb-f8-nDP">
@@ -296,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVk-ga-wGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="-735"/>
+            <point key="canvasLocation" x="380" y="-803"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
