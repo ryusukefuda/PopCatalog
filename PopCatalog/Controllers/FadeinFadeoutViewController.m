@@ -7,7 +7,7 @@
 //
 
 #import "FadeinFadeoutViewController.h"
-#import <Pop/POP.h>
+#import <POP+MCAnimate.h>
 
 @interface FadeinFadeoutViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
@@ -15,6 +15,9 @@
 @end
 
 @implementation FadeinFadeoutViewController
+{
+    BOOL _stopAnimation;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,6 +39,12 @@
     [self fadeOutAnimation];
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    _stopAnimation = YES;
+    [self.myLabel pop_removeAllAnimations];
+}
+
 #pragma mark Animation
 - (void)fadeOutAnimation
 {
@@ -47,9 +56,10 @@
     anim.beginTime = 0.0;
     anim.completionBlock = ^(POPAnimation *anim, BOOL finished) {
         NSLog(@"FadeOut animation has completed.");
-        [self fadeInAnimation];
+        if (_stopAnimation == NO) {
+            [self fadeInAnimation];
+        }
     };
-
     [self.myLabel pop_addAnimation:anim forKey:@"fadeOut"];
 }
 
@@ -64,7 +74,9 @@
     
     anim.completionBlock = ^(POPAnimation *anim, BOOL finished) {
         NSLog(@"FadeIn animation has completed.");
-        [self fadeOutAnimation];
+        if (_stopAnimation == NO) {
+            [self fadeOutAnimation];
+        }
     };
     [self.myLabel pop_addAnimation:anim forKey:@"fadeIn"];
 }
