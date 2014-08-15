@@ -4,6 +4,9 @@ PopCatalog
 Samples for Facebook POP.  
 https://github.com/facebook/pop
 
+##Demo
+![Alt Text](https://github.com/ryusukefuda/PopCatalog/blob/master/demo.gif)
+
 ##Usage
 
 1. install Podfile  

@@ -34,6 +34,9 @@
 {
     [super viewDidLoad];
     
+    //Init
+    
+    self.navigationItem.title = @"Pop Catalog";
     self.catalogTableView.delegate = self;
     self.catalogTableView.dataSource = self;
     
