@@ -45,6 +45,7 @@
                                @"Scale",
                                @"Slide",
                                @"Bound",
+                               @"Popup and Fadeout",
                                @"Rotation (POP-MCAnimate)",
                                @"Count Down",
                                @"Slot",
@@ -95,9 +96,12 @@
             [self performSegueWithIdentifier:@"toBound" sender:self];
             break;
         case 4:
-            [self performSegueWithIdentifier:@"toRotation" sender:self];
+            [self performSegueWithIdentifier:@"toPopupAndFadeout" sender:self];
             break;
         case 5:
+            [self performSegueWithIdentifier:@"toRotation" sender:self];
+            break;
+        case 6:
             [self performSegueWithIdentifier:@"toCountDown" sender:self];
             break;
     

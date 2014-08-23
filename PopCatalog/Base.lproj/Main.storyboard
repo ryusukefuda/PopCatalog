@@ -62,6 +62,7 @@
                         <segue destination="fK6-O5-Ebd" kind="push" identifier="toBound" id="Cwo-Xt-kP1"/>
                         <segue destination="Kgg-Vc-NCb" kind="push" identifier="toRotation" id="KKc-kg-zbV"/>
                         <segue destination="ddL-Iy-P4f" kind="push" identifier="toCountDown" id="UMn-83-eOV"/>
+                        <segue destination="Vca-E7-2CS" kind="push" identifier="toPopupAndFadeout" id="b3R-PJ-5gs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKs-iV-Loo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="1358" y="-274"/>
         </scene>
-        <!--View Controller-->
+        <!--Popup Fadeout View Controller-->
         <scene sceneID="HE1-GS-h0e">
             <objects>
-                <viewController id="Vca-E7-2CS" sceneMemberID="viewController">
+                <viewController id="Vca-E7-2CS" customClass="PopupFadeoutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3hh-Fx-Bok"/>
                         <viewControllerLayoutGuide type="bottom" id="6Tn-w5-2he"/>
@@ -195,12 +196,25 @@
                     <view key="view" contentMode="scaleToFill" id="dHH-jL-sTI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoW-95-fKo">
+                                <rect key="frame" x="95" y="366" width="140" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="15G-vP-Va6"/>
+                    <connections>
+                        <outlet property="myLabel" destination="SoW-95-fKo" id="gJz-XB-aAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37f-DZ-5xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="1269"/>
+            <point key="canvasLocation" x="298" y="865"/>
         </scene>
         <!--Count Down View Controller-->
         <scene sceneID="dcH-3e-ZVC">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430092C019A8BC4C002C31BC /* PopupFadeoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430092BF19A8BC4C002C31BC /* PopupFadeoutViewController.m */; };
 		43182E45198F1C5600B479E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43182E44198F1C5600B479E8 /* Foundation.framework */; };
 		43182E47198F1C5600B479E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43182E46198F1C5600B479E8 /* CoreGraphics.framework */; };
 		43182E49198F1C5600B479E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43182E48198F1C5600B479E8 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430092BE19A8BC4C002C31BC /* PopupFadeoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupFadeoutViewController.h; sourceTree = "<group>"; };
+		430092BF19A8BC4C002C31BC /* PopupFadeoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupFadeoutViewController.m; sourceTree = "<group>"; };
 		43182E41198F1C5600B479E8 /* PopCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43182E44198F1C5600B479E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43182E46198F1C5600B479E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -192,6 +195,8 @@
 				433465DA1993538100660FB2 /* RotationViewController.m */,
 				43983DF61994C5B6006410AC /* CountDownViewController.h */,
 				43983DF71994C5B6006410AC /* CountDownViewController.m */,
+				430092BE19A8BC4C002C31BC /* PopupFadeoutViewController.h */,
+				430092BF19A8BC4C002C31BC /* PopupFadeoutViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43182E55198F1C5600B479E8 /* AppDelegate.m in Sources */,
+				430092C019A8BC4C002C31BC /* PopupFadeoutViewController.m in Sources */,
 				43182E51198F1C5600B479E8 /* main.m in Sources */,
 				43983DF81994C5B6006410AC /* CountDownViewController.m in Sources */,
 				433465DB1993538100660FB2 /* RotationViewController.m in Sources */,
